@@ -19,7 +19,7 @@
 
 html {
 	font-size: 62.5%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Lexend Deca", serif;
 }
 
 .container {
@@ -93,4 +93,57 @@ html {
 
 .text-primary {
 	color: var(--primary-color);
+}
+
+@media (max-width: 700px) {
+	.card {
+		flex-direction: column;
+		width: 30rem;
+		height: 74rem;
+	}
+	.card__left {
+		width: 100%;
+		height: 40rem;
+		padding: 2rem;
+		order: 1;
+	}
+
+	.card__left h2 {
+		font-size: 2.5rem;
+		color: var(--white);
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.card__right {
+		width: 100%;
+		height: 23rem;
+	}
+
+	.card__description {
+		font-size: 1.4rem;
+		line-height: 2rem;
+		text-align: center;
+	}
+
+	.card__stats {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 20rem;
+	}
+
+	.stats__name {
+		font-size: 1.2rem;
+	}
+
+	.stats__value {
+		font-size: 2rem;
+	}
+
+	.stats__group {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
